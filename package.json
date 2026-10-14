@@ -1,0 +1,21 @@
+{
+  "name": "mcp-client-server-demo",
+  "version": "1.0.0",
+  "description": "Minimal MCP client/server learning demo (TypeScript + official SDK + stdio)",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\"",
+    "start": "node dist/client.js",
+    "test:failures": "node scripts/failure-tests.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "zod": "^4"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "typescript": "^5"
+  }
+}
